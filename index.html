@@ -124,16 +124,17 @@
 
         .event-image {
             flex-shrink: 0;
-            width: 120px;
-            height: 120px;
+            width: 220px;
+            height: 220px;
             background: linear-gradient(135deg, #f9f5ef 0%, #f0e9dd 100%);
-            border-radius: 8px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2.5rem;
             border: 2px solid #ede7dc;
             overflow: hidden;
+            box-shadow: 0 4px 12px rgba(139, 111, 71, 0.12);
         }
 
         .event-image img {
@@ -413,44 +414,139 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            .header {
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+            }
+
             .header h1 {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
+                margin-bottom: 12px;
+            }
+
+            .header .subtitle {
+                font-size: 0.95rem;
+                line-height: 1.5;
             }
 
             .timeline::before {
-                right: 15px;
+                right: 10px;
+                width: 2px;
             }
 
             .event {
-                padding-right: 50px;
+                padding-right: 35px;
+                margin-bottom: 35px;
             }
 
             .event-marker {
-                right: 7px;
+                right: 4px;
+                width: 14px;
+                height: 14px;
+                border-width: 2px;
             }
 
             .event-card {
                 flex-direction: column;
-                gap: 20px;
-                padding: 20px;
+                gap: 16px;
+                padding: 18px;
+                border-radius: 10px;
             }
 
             .event-image {
                 width: 100%;
-                height: 100px;
+                height: 180px;
+                border-radius: 8px;
+                margin-bottom: 4px;
+            }
+
+            .event-content {
+                width: 100%;
+            }
+
+            .event-date {
+                font-size: 0.95rem;
+                padding: 6px 16px;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+
+            .event-title {
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+                line-height: 1.4;
+            }
+
+            .event-description {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+
+            .event-meta {
+                font-size: 0.85rem;
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+
+            .event-audience {
+                font-size: 0.8rem;
+                padding: 4px 12px;
+                margin-bottom: 12px;
+                display: inline-block;
             }
 
             .event-actions {
                 flex-direction: column;
+                gap: 8px;
+                margin-top: 12px;
             }
 
             .btn {
                 width: 100%;
                 text-align: center;
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+
+            .footer {
+                margin-top: 50px;
+                padding-top: 20px;
+                font-size: 0.95rem;
             }
 
             .modal-content {
-                padding: 30px 20px;
+                padding: 25px 18px;
+                width: 95%;
+                border-radius: 10px;
+            }
+
+            .modal h2 {
+                font-size: 1.3rem;
+                margin-bottom: 18px;
+            }
+
+            .form-group {
+                margin-bottom: 16px;
+            }
+
+            .form-group label {
+                font-size: 0.9rem;
+                margin-bottom: 6px;
+            }
+
+            .form-group input {
+                padding: 11px;
+                font-size: 0.95rem;
+            }
+
+            .form-submit {
+                padding: 13px;
+                font-size: 0.95rem;
             }
         }
     </style>
